@@ -1,0 +1,182 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 15px;
+    height: 15px;
+    background-color: #B0C4DE;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #8aa2c0;
+    border-radius: 5px;
+}
+/* Navigation Bar */ nav ul li a.active {
+    background-color: #8aa2c0;
+    color: #000000;     
+    }
+    nav {
+    background-color: #B0C4DE;
+    overflow: hidden;
+    }
+    nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    }
+    nav ul li {
+    flex: 1;
+    }
+    nav ul li a {
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    }
+    nav ul li a:hover {
+    background-color: #566a8c;
+    }
+/* Poca Database */
+.album {
+    display: block;
+    border: 0px solid #000;
+    background-color: #FFF0F5;
+    width: 95%;
+    text-align: center;
+    margin-top: 50px;
+}
+.member {
+  text-align: center;
+}
+    .member>div {
+        display: inline-block;
+        text-align: center;
+        width: fit-content;
+        max-width: 10%;
+        min-width: 10%;
+        margin: 0px;
+        padding: 0px;
+        font-size: 20px;
+        font-weight: bold;
+        color: #000;
+        background-color: #fff;
+        border-radius: 0px;
+        vertical-align: top;
+        border: 1px solid #000;
+        border-bottom: 0px;
+}
+.poca {
+    display: block;
+    border: 1px solid #000;
+    border-top-width: 0px;
+    background-color: #fff;
+    max-width: 82.2%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+}       
+/* Font */
+.indie-flower-regular {
+  font-family: "Indie Flower", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+/* Body */
+body {
+    /* font-family: "Indie Flower", normal; */
+    background-color: #FFF0F5;
+    color: #000;
+}
+    /* Colors
+    lavender: #E6E6FA
+    lightsteelblue: #B0C4DE
+    snow: #FFFAFA
+    ghost blue: #F8F8FF
+    white smoke: #F5F5F5
+    lavender blush: #FFF0F5
+    */
+button {
+    background-color: #8aa2c0;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #566a8c;
+}
+link {
+    color: #FFFFFF;
+    text-decoration: none;
+    }
+link:visited {
+    color: #FFFFFF;
+    }
+/* text colors */
+.pink-text {
+    color: rgb(209, 141, 152);
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    /* background-color: white; */
+}
+
+.gold-text {
+    color: rgb(187, 162, 20);
+    /* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000; */
+    /* background-color: white; */
+}
+/* Background Video */
+.background-video-wrapper {
+  color: #fff;
+  background: #000;
+  text-align: center;
+  position: relative;
+  video {
+    opacity: 0.5;
+    background: #000;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  .copy {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 10vmax 4rem;
+  }
+}
+.background-video-wrapper { /* Fade */
+  color: #fff;
+  background: #000;
+  text-align: center;
+  position: relative;
+  video {
+    opacity: 0.5;
+    background: #000;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+  }
+  .copy {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin: 1vmax 4rem;
+    font-family: "Indie Flower", cursive;
+    font-size: 20px;
+    font-weight: 400;
+  }
+}
+/* IPOD */
