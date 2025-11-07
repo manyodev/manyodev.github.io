@@ -1,14 +1,18 @@
-<!-- Last Updated Aug 08 2025 -->
+<!-- Last Updated Nov 06 2025 -->
 <!DOCTYPE html>
 <html lang="en">
-<head> <!-- Heading -->
-    <title>SKZ Poca Database</title>
+<head>
+    <title>SKZPD</title>
+    <!-- Links -->
+    <!-- Favicon -->
     <link rel="icon" href="Compass.png" type="image/x-icon">
+    <!-- CSS & JS -->
     <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
     <!-- Meta Tags -->
     <meta name="keywords" content="Stray Kids photocards, Stray Kids collection, stray kids photocard template, skz photocard template, skz photocard collection, skz photocards, skz pobs template, skz pobs photocards">
     <meta name="description" content="SKZPD (short for SKZ Poca Database or Stray Kids Photocard Database) is a fan-made website that displays a gallery of Stray Kids’ photocards from 2018 to 2025.">
@@ -18,8 +22,25 @@
     <!-- Pinterest -->
     <meta name="p:domain_verify" content="cab24816eefc83feab47a99017e17ff2"/>
 </head>
-<body>
-    <!-- HEADER -->
+<body class="bg">
+<nav> <!-- Navigation Bar -->
+    <ul>
+        <li><a href="./" class="active">Home</a></li>
+        <li><a href="./About">About</a></li>
+        <li><a href="./Contact">Contact</a></li>
+        <li><a href="#top">Back to Top</a></li>
+    </ul>
+</nav>
+<!-- BGM -->
+<audio id="BGM" src="InTheDark.mp3" autoplay loop></audio>
+<div id="music-art">
+  <img class="album-cover" src="RomanEmpireCover.png" alt="Album Cover">
+  <img class="cd" src="cdImage.png" alt="CD Image">
+  <p class="album-text">Play/Pause</p>
+</div>
+
+<!-- MAIN CONTENT ~ POCA DATABASE -->  <main class="main-content">
+<!-- Header -->
 <div class="background-video-wrapper">
   <video class="background-video" preload="auto" autoplay loop muted playsinline>
     <source src="skzoo_intro_full.mp4" type="video/mp4">
@@ -30,16 +51,7 @@
     <h1>Stray Kids Photocard Database</h1>
   </div>
 </div>
-<nav> <!-- Navigation Bar -->
-    <ul>
-        <li><a href="./" class="active">Home</a></li>
-        <li><a href="./About">About</a></li>
-        <li><a href="./Contact">Contact</a></li>
-    </ul>
-</nav>
-<!-- MAIN CONTENT ~ POCA DATABASE -->
 <!-- Main Content -->
-<h1>This website is a work in progress, but you may find it helpful. Please check it out and look forward to updates and improvements!</h1>
 <p> Scroll down the page to see the photocards in order of release, or click a link below to jump straight to that section.</p>
 <p>2018: <a href="#mixtape">Mixtape</a> | <a href="#stay0th">Stay 0th</a> | <a href="#iamnot">I Am Not</a> | <a href="#iamnottw">I Am Not (Taiwan Edition)</a> | <a href="#iamnotuv">I Am Not (Unveil)</a> | <a href="#iamwho">I Am Who</a> | <a href="#iamwhouv">I Am Who (Unveil)</a> | 
 <a href="#iamyou">I Am You</a> | <a href="#iamyoutw">I Am You (Taiwan Edition)</a> | <a href="#iamyouuv">I Am You (Unveil)</a> | <a href="#iamyoumg">I Am You (Meet & Greet)</a></p>
@@ -50,14 +62,12 @@
 <p>2023: <a href="#sound">The Sound</a> | <a href="#5star">5-Star</a> | <a href="#socialpath">Social Path</a> | <a href="#rockstar">樂-STAR (Rock-Star)</a></p>
 <p>2024: <a href="#stay4th">Stay 4th</a> | <a href="#ate">ATE</a> | <a href="#giant">GIANT</a> | <a href="#hop">HOP</a></p>
 <p>2025: <a href="#stay5th">Stay 5th</a> | <a href="#hollow">Hollow</a> | <a href="#karma">KARMA</a></p>
-
-<!-- Logo & Signatures --> <div class="album">
+    <!-- Logo & Signatures --> <div class="album">
     <img src="pngwing.com.png" alt="Image failed :(" width="30%">
     <p> Fun fact: Bang Chan created the Stray Kids logo. You'll notice the logo is in his handwriting.</p>
     <h1>Signatures</h1>
     <p> 2017 ~ Present </p>
-    
-</div> </div>
+    </div>
 <!-- Logo & Signatures --> <div class="member">
 <div>Bang Chan
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6TJJ8BqKi_JPLVbZ0SPd_6hbtTAyGegNaW23Qw2VgYO5OKGvcBbpODkYRxk5x3Mjpmnw&usqp=CAU" alt="Image failed :(" width="100%">
@@ -178,7 +188,6 @@
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/26/3efa0233a986458b866be4ca12420716.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">0th Generation</div>
-<a href="#top">Back to Top</a>
 <!-- I Am Not --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Stray_Kids_Debut_Album.jpg" alt="Image failed :(" width="10%" id="iamnot">
     <h1> I Am Not</h1>
@@ -386,7 +395,7 @@
     <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
 </div></div>
 <div class="poca"><span class="gold-text">Polaroid</span></div>
-<a href="#top">Back to Top</a>
+
 <!-- I Am Who --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Stray_Kids_I_Am_Who_album_cover.jpg" alt="Image failed :(" width="10%" id="iamwho">
     <h1> I Am Who</h1>
@@ -582,7 +591,7 @@
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/10ca1e4a78fa464885869f1bebdc73f6.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca"><span class="gold-text">Broadcast</span></div>
-<a href="#top">Back to Top</a>
+
 <!-- UNVEIL "Op. 02 : I am WHO" --> <div class="album">
     <img src="non-ph-images/UNVEIL_IamWHO.webp" alt="Image failed :(" width="20%" id="iamwhouv">
     <h1> UNVEIL "Op. 02 : I am WHO"</h1>
@@ -654,7 +663,7 @@
     <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca"><span class="gold-text">Lucky Envelope</span></div>
-<a href="#top">Back to Top</a>
+
 <!-- I Am You --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/1/11/I_Am_You_Album_Cover.jpeg" alt="Image failed :(" width="10%" id="iamyou">
     <h1> I Am You</h1>
@@ -799,7 +808,7 @@
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/34a111e93c0b4044813d1951f8b2bd5f.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca"><span class="pink-text">POB</span></div>
-<a href="#top">Back to Top</a>
+
 <!-- I Am You: Special Edition --> <div class="album">
     <img src="https://st.cdjapan.co.jp/pictures/l/15/05/NEOIMP-16487.jpg" alt="Image failed :(" width="10%" id="iamyoutw">
     <h1> I Am You: Special Edition</h1>
@@ -876,7 +885,7 @@
     <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca"><span class="gold-text">Taiwan Polaroid</span></div>
-<a href="#top">Back to Top</a>
+
 <!-- UNVEIL "Op. 03 : I am YOU" --> <div class="album">
     <img src="non-ph-images/UNVEIL__IamYOU.webp" alt="Image failed :(" width="20%" id="iamyouuv">
     <h1> UNVEIL "Op. 03 : I am YOU"</h1>
@@ -959,7 +968,7 @@
          <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca"><span class="gold-text">Lucky Envelope</span></div>
-<a href="#top">Back to Top</a>
+
 <!-- MEET&GREET ~ I Am You --> <div class="album">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PnxLQd9J7rE?si=uDbtkFBYbtrIEaGZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="iamyoumg"></iframe>
     <h1>MEET&GREET ~ I Am You</h1>
@@ -991,7 +1000,7 @@
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/8e73d9666ecd44d9a7fcc1573d240af5.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Meet&Greet</div>
-<a href="#top">Back to Top</a>
+
 <!-- Clé 1 : MIROH --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/0/07/Stray_Kids_-_Cl%C3%A9_1_-_Miroh.png" alt="Image failed :(" width="10%" id="cle1">
     <h1> Clé 1 : MIROH</h1>
@@ -1193,7 +1202,7 @@
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/4645d3625184476e8c822c837470f244.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Limited</div>
-<a href="#top">Back to Top</a>
+
 <!--Official Fanclub STAY: 1st --> <div class="album">
     <iframe width="560" height="315" src="https://www.youtube.com/embed/5P-mftKqr4k?si=0SIJ3fCNHQpUUURw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="stay1st"></iframe>
     <h1>STAY 1ST OFFICIAL FANSHIP KIT</h1>
@@ -1226,7 +1235,7 @@
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/26/cafff9d3fc12409c88bd2e6cadb1aa39.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Polaroid Set</div>
-<a href="#top">Back to Top</a>
+
 <!-- Clé 2 : Yellow Wood --> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/7/71/Stray_Kids_Yellow_Wood.jpg" width="10%" id="cle2">
 <h1>Clé 2 : Yellow Wood</h1>
@@ -1428,7 +1437,7 @@
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/08/d937375b76c5412a83a1152c3390b702.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca"><span class="pink-text">POB</span></div>
-<a href="#top">Back to Top</a>
+
 <!--Clé 2 : Yellow Wood : Special Edition --> <div class="album">
     <img src="https://st.cdjapan.co.jp/pictures/l/15/05/NEOIMP-16487.jpg" alt="Image failed :(" width="10%" id="cle2tw">
     <h1> Clé 2 : Yellow Wood : Special Edition</h1>
@@ -1501,7 +1510,7 @@
 <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Polaroid</div>
-<a href="#top">Back to Top</a>
+
 <!--Clé : Levanter--> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Stray_Kids_-_Cl%C3%A9_Levanter.jpg" width="10%" id="cle3">
 <h1>Clé : Levanter</h1>
@@ -1669,13 +1678,13 @@
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/25/9bea83e298114963933932ca45bb69df.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Clé</div>
-<a href="#top">Back to Top</a>
+
 <!--Step Out of Clé--> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Stray_Kids_-_Step_Out_of_Cl%C3%A9.png" width="10%" >
 <h1 id="2020">Step Out of Clé</h1>
 <p>2020 ~ Digital Release (no physical album or photocards), First Full-English Songs</p>
 </div> </div>
-<a href="#top">Back to Top</a>
+
 <!--SKZ2020--> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Stray_Kids_-_SKZ2020.jpg" width="10%" id="skz2020">
 <h1>SKZ2020</h1>
@@ -1683,7 +1692,7 @@
 </div> </div>
 <!--SKZ2020-->
 <div class="poca">*Japanese photocards coming soon*</div>
-<a href="#top">Back to Top</a>
+
 <!-- TOP --> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Stray_Kids_-_Top_%28Korean_ver.%29.jpg" width="10%" id="topjp">
 <h1>TOP</h1>
@@ -1691,7 +1700,7 @@
 </div> </div>
 <!-- TOP -->
 <div class="poca">*Japanese photocards coming soon*</div>
-<a href="#top">Back to Top</a>
+
 <!--GO生--> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/2/2b/Stray_Kids_-_Go_Live.png" width="10%" id="golive">
 <h1>GO生 (Go Live)</h1>
@@ -1927,7 +1936,7 @@
     <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca"><span class="pink-text">Polaroid</span></div>
-<a href="#top">Back to Top</a>
+
 <!-- <p> This is an example of a double-sided photocard </p>-->
 <!--IN生--> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/In_Life_2020.jpg" width="10%" id="inlife">
@@ -2028,7 +2037,7 @@
     <img src="https://ndc.infludeo.com/media/photocard_blur/2025/04/02/d43ad37463724bdcb19b2af42855e298.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Concept</div>
-<a href="#top">Back to Top</a>
+
 <!-- ALL IN --> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/2/2b/Stray_Kids_-_All_In_%28Regular%29.jpg" width="20%" id="allin">
 <h1>ALL IN</h1>
@@ -2036,7 +2045,7 @@
 </div>
 <!-- ALL IN -->
  <div class="poca">*Japanese photocards coming soon*</div>
-<a href="#top">Back to Top</a>
+
 <!-- NOEASY --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/59/Stray_Kids_-_Noeasy_%28Digital%29.jpeg/250px-Stray_Kids_-_Noeasy_%28Digital%29.jpeg" alt="Image failed :(" width="20%" id="noeasy">
     <h1> NOEASY</h1>
@@ -2267,7 +2276,7 @@
 </div> </div>
 <div class="poca">Jewel Case</div>
 <div class="poca">*Store POBs coming soon*</div>
-<a href="#top">Back to Top</a>
+
 <!-- Scars --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Stray_Kids_-_Scars_-_Thunderous_Japanese.jpeg" alt="Image failed :(" width="20%" id="scars">
     <h1> Scars</h1>
@@ -2275,7 +2284,7 @@
 </div> </div>
 <!-- Scars -->
 <div class="poca">*Japanese photocards coming soon*</div>
-<a href="#top">Back to Top</a>
+
 <!-- Christmas EveL --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Stray_Kids_-_Christmas_EveL.jpeg" alt="Image failed :(" width="20%" id="evel">
     <h1> Christmas EveL</h1>
@@ -2386,13 +2395,13 @@
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/11/27/9b9bd7e041cd4b259224a8a92f880ea3.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">POB Set</div>
-<a href="#top">Back to Top</a>
+
 <!--Official Fanclub STAY: 2nd, between NOEASY & Christmas Evel --> <div class="album">
     <img src="non-ph-images/Fanclub-2NDGEN-Poster.webp" alt="Image failed :(" width="20%" id="stay2nd">
     <h1> Official Fanclub STAY: 2nd Generation</h1>
     <p> 2021 ~ Active October 25, 2021 - October 24, 2022</p>
 </div> </div>
-<a href="#top">Back to Top</a>
+
 <!-- SKZ2021 --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Stray_Kids_-_SKZ2021.jpeg" alt="Image failed :(" width="20%">
     <h1> SKZ2021</h1>
@@ -2533,7 +2542,7 @@
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/30/eb584c2259b5431eadfe52602c63b9aa.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Jewel Case</div>
-<a href="#top">Back to Top</a>
+
 <!-- Circus --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Stray_Kids_-_Circus_%28Regular%29.jpeg" alt="Image failed :(" width="20%" id="circus">
     <h1> Circus</h1>
@@ -2541,7 +2550,7 @@
 </div> </div>
 <!-- Circus -->
  <div class="poca">*Japanese photocards coming soon*</div>
- <a href="#top">Back to Top</a>
+ 
 <!-- Maxident --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/d/de/Stray_Kids_-_Maxident.png" alt="Image failed :(" width="20%" id="max">
     <h1> Maxident</h1>
@@ -2703,7 +2712,7 @@
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/31/454868ecbb294690beffc0523fb2a020.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca"><span class="pink-text">Case POB</span></div>
-<a href="#top">Back to Top</a>
+
 <!--Official Fanclub STAY: 3rd --> <div class="album">
     <img src="non-ph-images/Fanclub_3rd_Gen_Preview_Poster.webp" alt="Image failed :(" width="20%" id="stay3rd">
     <h1> Official Fanclub STAY: 3rd Generation</h1>
@@ -2734,7 +2743,7 @@
 <div>I.N
 
 </div> </div>
-<a href="#top">Back to Top</a>
+
 <!-- SKZ-Replay --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Stray_Kids_-_SKZ-Replay.png" alt="Image failed :(" width="20%" id="skzreplay">
     <h1> SKZ-Replay</h1>
@@ -2765,7 +2774,7 @@
 <div>I.N
 
 </div> </div>
-<a href="#top">Back to Top</a>
+
 <!-- The Sound --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Stray_Kids_-_The_Sound.png" alt="Image failed :(" width="20%" id="sound">
     <h1> The Sound</h1>
@@ -2773,7 +2782,7 @@
 </div> </div>
 <!-- The Sound -->
  <div class="poca">*Japanese photocards coming soon*</div>
- <a href="#top">Back to Top</a>
+ 
 <!-- 5-STAR --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Stray_Kids_-_5-Star.png" alt="Image failed :(" width="20%" id="5star">
     <h1> 5-STAR</h1>
@@ -2909,7 +2918,7 @@
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/28/e4e42b6789d547c7b549e6f430377079.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca"><span class="pink-text">Digipack POB</span></div>
-<a href="#top">Back to Top</a>
+
 <!-- Social Path --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/Stray_Kids_-_Social_Path_%28Feat._Lisa%29_Super_Bowl_%28Japanese_Ver.%29.png" alt="Image failed :(" width="20%" id="socialpath">
     <h1> Social Path</h1>
@@ -2917,7 +2926,7 @@
 </div> </div>
 <!-- Social Path -->
  <div class="poca">*Japanese photocards coming soon*</div>
- <a href="#top">Back to Top</a>
+ 
 <!-- Rock-Star --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/5/51/Stray_Kids_-_Rock-Star.png" alt="Image failed :(" width="20%" id="rockstar">
     <h1>樂-STAR</h1>
@@ -3120,7 +3129,7 @@
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/11/13/f792a10fa4804174909731807c1f3f25.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Nemo</div>
-<a href="#top">Back to Top</a>
+
 <!--Official Fanclub STAY: 4th --> <div class="album">
     <img src="non-ph-images/Fanclub_4th_Gen_Preview_Poster.webp" alt="Image failed :(" width="20%" id="stay4th">
     <h1> Official Fanclub STAY: 4th Generation</h1>
@@ -3419,7 +3428,7 @@
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/23/fc164e07307a4df18a4f9477d971e94b.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Nemo B Set</div>
-<a href="#top">Back to Top</a>
+
 <!-- GIANT --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Stray_Kids_-_Giant.png" alt="Image failed :(" width="20%" id="giant">
     <h1> GIANT</h1>
@@ -3427,7 +3436,7 @@
 </div> </div>
 <!-- GIANT -->
   <div class="poca">*Japanese photocards coming soon*</div>
-  <a href="#top">Back to Top</a>
+  
 <!-- HOP --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/2/29/Stray_Kids_-_Hop.png" alt="Image failed :(" width="20%" id="hop">
     <h1> HOP</h1>
@@ -3697,13 +3706,13 @@
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/503f731a54224093ae870a07d2bc0030.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 </div> </div>
 <div class="poca">Nemo Set</div>
-<a href="#top">Back to Top</a>
+
 <!--Official Fanclub STAY: 5th --> <div class="album">
     <img src="non-ph-images/Fanclub_5th_Gen_Preview_Poster.webp" alt="Image failed :(" width="20%" id="stay5th">
     <h1> Official Fanclub STAY: 5th Generation</h1>
     <p> 2025 ~ Current</p>
 </div> </div>
-<a href="#top">Back to Top</a>
+
 <!-- Mixtape : dominATE --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Stray_Kids_-_Mixtape_Dominate.png" alt="Image failed :(" width="20%" id="dominate">
     <h1 id="2025">Mixtape : dominATE</h1>
@@ -3716,7 +3725,7 @@
 </div> </div>
 <!-- Hollow -->
   <div class="poca">*Japanese photocards coming soon*</div>
-<a href="#top">Back to Top</a>
+
 
 <!-- KARMA --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Stray_Kids_-_Karma.png" alt="Karma (Stray Kids album)" width="20%" id="karma">
@@ -4094,7 +4103,8 @@
 </div> </div>
 <div class="ot8poca">MAKESTAR</div>
 <!-- -->
-<a href="#top">Back to Top</a>
+
+</main>
 <!-- Database end -->
     <hr>
     <hr>

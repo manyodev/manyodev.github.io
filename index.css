@@ -8,13 +8,18 @@
     background-color: #8aa2c0;
     border-radius: 5px;
 }
-/* Navigation Bar */ nav ul li a.active {
+/* Navigation Bar */
+nav ul li a.active {
     background-color: #8aa2c0;
     color: #000000;     
     }
     nav {
     background-color: #B0C4DE;
     overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
     }
     nav ul {
     list-style-type: none;
@@ -29,12 +34,126 @@
     display: block;
     color: #000000;
     text-align: center;
-    padding: 14px 16px;
+    padding: 15px 16px;
     text-decoration: none;
     }
     nav ul li a:hover {
     background-color: #566a8c;
     }
+/* Footer */
+footer {
+    background-color: #B0C4DE;
+    color: #000000;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    }
+footer p {
+    display: inline-block;
+    margin: 0;
+    font-size: 14px;
+    padding: 0 10px;
+    }
+/* Scrolling Banner */
+.m marquee {
+  padding: 0px;
+}
+
+.m p {
+  display: inline-block; /* Allows content to be side-by-side */
+  padding: 0 20px; /* Space between items */
+}
+/* Music Art */
+#music-art, .album-cover {
+position: fixed;
+bottom: 0%;
+right: 0%;
+z-index: 1000;
+min-width: 5%;
+max-width: 7%;
+height: auto;
+background-color: black;
+color: black;
+}
+.cd {
+position: fixed;
+bottom: 0%;
+right: 1%;
+z-index: 999;
+min-width: 5%;
+max-width: 7%;
+height: auto;
+-webkit-animation: spin 2s linear infinite;
+-webkit-animation:spin 4s linear infinite;
+-moz-animation:spin 4s linear infinite;
+animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+100% { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+100% {
+-webkit-transform: rotate(360deg);
+transform:rotate(360deg);
+}
+}
+.cd:hover { /* this makes the cd stop spinning when hovering! */
+-webkit-animation: pop 0.3s ease;
+}
+.album-text {
+    position: fixed;
+    color: rgb(0, 0, 0);
+    text-shadow: #FFFFFF 1px 1px 2px;
+    font-size: 90%;
+    text-align: center;
+    z-index: 1000;
+    bottom: 0%;
+    right: 2%;
+}
+.album-text:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: #000000 1px 1px 2px;
+    cursor: pointer;
+}
+/* Update Table */
+.update-table {
+    border-collapse: collapse;
+    background-color: #FFF;
+    margin: 20px auto;
+}
+th, td {
+  border: 1px solid rgb(160 160 160);
+  padding: 8px 10px;
+}
+thead {
+    background-color: #B0C4DE;
+}
+/* Body */
+.bg {
+    /* font-family: "Indie Flower", normal; */
+    background-color: #FFF0F5;
+    padding-top: 10px; /* Add padding to prevent content from going under the fixed nav bar */
+    margin: 0;
+}
+    /* Colors
+    lavender: #E6E6FA
+    lightsteelblue: #B0C4DE
+    snow: #FFFAFA
+    ghost blue: #F8F8FF
+    white smoke: #F5F5F5
+    lavender blush: #FFF0F5
+    */
+/* Main */
+.main-content {
+    color: black;
+    background-color: #FFF0F5;
+    margin: 0;
+}
 /* Poca Database */
 .album {
     display: block;
@@ -55,7 +174,7 @@
         min-width: 10%;
         margin: 0px;
         padding: 0px;
-        font-size: 20px;
+        font-size: 100%;
         font-weight: bold;
         color: #000;
         background-color: #fff;
@@ -144,20 +263,7 @@
   font-weight: 400;
   font-style: normal;
 }
-/* Body */
-body {
-    /* font-family: "Indie Flower", normal; */
-    background-color: #FFF0F5;
-    color: #000;
-}
-    /* Colors
-    lavender: #E6E6FA
-    lightsteelblue: #B0C4DE
-    snow: #FFFAFA
-    ghost blue: #F8F8FF
-    white smoke: #F5F5F5
-    lavender blush: #FFF0F5
-    */
+/* Buttons */
 button {
     background-color: #8aa2c0;
     color: #FFFFFF;
@@ -238,4 +344,3 @@ link:visited {
     font-weight: 400;
   }
 }
-/* IPOD */
