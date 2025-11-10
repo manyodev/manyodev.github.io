@@ -22,24 +22,23 @@
     <!-- Pinterest -->
     <meta name="p:domain_verify" content="cab24816eefc83feab47a99017e17ff2"/>
 </head>
-<body class="bg">
+<body class="background">
 <nav> <!-- Navigation Bar -->
     <ul>
-        <li><a href="./" class="active">Home</a></li>
-        <li><a href="./About">About</a></li>
-        <li><a href="./Contact">Contact</a></li>
-        <li><a href="#top">Back to Top</a></li>
+        <!-- Buttons converted to anchors so they inherit link styling -->
+        <li><a href="#" onclick="showHomePage(); return false;">Home</a></li>
+        <li><a href="#" onclick="showAboutPage(); return false;">About</a></li>
+        <li><a href="#" onclick="showContactPage(); return false;">Contact</a></li>
     </ul>
 </nav>
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top">Top</button>
 <!-- BGM -->
-<audio id="BGM" src="InTheDark.mp3" autoplay loop></audio>
+<audio id="BGM" src="InTheDark.mp3" loop></audio>
 <div id="music-art">
   <img class="album-cover" src="RomanEmpireCover.png" alt="Album Cover">
-  <img class="cd" src="cdImage.png" alt="CD Image">
-  <p class="album-text">Play/Pause</p>
+  <img class="play-pause" src="Pause.png" alt="Play/Pause">
 </div>
-
-<!-- MAIN CONTENT ~ POCA DATABASE -->  <main class="main-content">
 <!-- Header -->
 <div class="background-video-wrapper">
   <video class="background-video" preload="auto" autoplay loop muted playsinline>
@@ -51,18 +50,151 @@
     <h1>Stray Kids Photocard Database</h1>
   </div>
 </div>
-<!-- Main Content -->
-<p> Scroll down the page to see the photocards in order of release, or click a link below to jump straight to that section.</p>
-<p>2018: <a href="#mixtape">Mixtape</a> | <a href="#stay0th">Stay 0th</a> | <a href="#iamnot">I Am Not</a> | <a href="#iamnottw">I Am Not (Taiwan Edition)</a> | <a href="#iamnotuv">I Am Not (Unveil)</a> | <a href="#iamwho">I Am Who</a> | <a href="#iamwhouv">I Am Who (Unveil)</a> | 
-<a href="#iamyou">I Am You</a> | <a href="#iamyoutw">I Am You (Taiwan Edition)</a> | <a href="#iamyouuv">I Am You (Unveil)</a> | <a href="#iamyoumg">I Am You (Meet & Greet)</a></p>
-<p>2019: <a href="#cle1">Clé 1 : MIROH</a> | <a href="#stay1st">Stay 1st</a> | <a href="#cle2">Clé 2 : Yellow Wood</a> | <a href="#cle2tw">Clé 2 : Yellow Wood (Taiwan Edition)</a> | <a href="#cle3">Clé : Levanter</a> </p>
-<p>2020: <a href="#skz2020">SKZ2020</a> | <a href="#topjp">Top</a> | <a href="#golive">GO生 (Go Live)</a> | <a href="#inlife">IN生 (In Life)</a> | <a href="#allin">All In</a></p>
-<p>2021: <a href="#noeasy">NOEASY</a> | <a href="#scars">SCARS</a> | <a href="#evel">Christmas EveL</a> | <a href="#stay2nd">Stay 2nd</a></p>
-<p>2022: <a href="#odd">Oddinary</a> | <a href="#circus">Circus</a> | <a href="#max">Maxident</a> | <a href="#stay3rd">Stay 3rd</a> | <a href="#skzreplay">SKZ-Replay</a></p>
-<p>2023: <a href="#sound">The Sound</a> | <a href="#5star">5-Star</a> | <a href="#socialpath">Social Path</a> | <a href="#rockstar">樂-STAR (Rock-Star)</a></p>
-<p>2024: <a href="#stay4th">Stay 4th</a> | <a href="#ate">ATE</a> | <a href="#giant">GIANT</a> | <a href="#hop">HOP</a></p>
-<p>2025: <a href="#stay5th">Stay 5th</a> | <a href="#hollow">Hollow</a> | <a href="#karma">KARMA</a></p>
-    <!-- Logo & Signatures --> <div class="album">
+<main> <!-- Main -->
+<div class="bg-top about-page"> <!-- About -->
+<hr>
+<h1>What is SKZPD?</h1>
+<p>This is a fan-made website that I (Manyo) created to act as a 
+    resource for collecting Stray Kids photocards.</p>
+<p>This site is a work in progress,
+so look forward to improvements in quality & functionality!</p>
+<hr>
+<!-- UPDATES-->
+<h1>Update Log</h1>
+<p><b>Note:</b>
+    The plan is to have KARMA 100% updated before DO IT. 
+    Then to have DO IT 100% updated before working to update other content. 
+    The same for every future comeback. 
+    Meanwhile photocards for previous releases will be updated during downtime 
+    between comebacks. 
+    It may make updates for older content slower, but make it easier to not fall 
+    behind on new content.</p>
+<table class="update-table">
+    <thead><tr>
+        <th>Version (YY.MM.DD)</th>
+        <th>Update</th>
+        <th>Details</th>
+    </tr></thead>
+        <tr>
+        <td>v25.11.10</td>
+        <td>More aesthetic changes.</td>
+        <td>
+            <ul>
+                <li>Altered code so all pages (Home / About / Contact) are now on one page (html file). This way switching pages is smoother and features (navigation, header, bgm) are consistent from page to page.</li>
+                <li>Improved BGM (smaller icon, pause/play button).</li>
+                <li>Improved scroll to top button (removed from navigation bar and turned into a floating button).</li>
+                <li>Improved styling and responsiveness of text elements.</li>
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>v25.11.07</td>
+        <td>SKZPD now has a more convenient & aesthetically pleasing design.</td>
+        <td>
+            <ul>
+                <li>Redesigned navigation bar.</li>
+                <li>Added BGM (Currently <a href="https://www.youtube.com/watch?v=Yv8g9GE9VAY" target="_blank">In The Dark</a> on loop).</li>
+                <li>Turned update log into a table with calendar versioning.</li>
+                <!-- <li>Added photocards.</li> -->
+            </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>v25.07.06</td>
+        <td>SKZPD initial release!</td>
+        <td>
+            <ul>
+                <li>Made SKZPD publically available.</li>
+                <li>Bought domain + make SKZPD https secured.</li>
+                <li>Website launched with many photocards from 2018 to 2025 displayed.</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<hr>
+<!-- SOURCES / CREDITS -->
+    <h1>Sources / Credits</h1>
+    <ul>
+        <li> Compass Icon: <a href="https://www.flaticon.com/free-icons/maps-and-location" title="maps and location icons" target="_blank" >created by Freepik - Flaticon</a></li>
+        <li> Album cover images + signatures: <a href="https://en.wikipedia.org/wiki/Template:Stray_Kids" target="_blank">Wikipedia</a></li>
+        <li> Album versions & photocard types: <a href="https://skzot8templates.carrd.co/#" target="_blank">skzot8templates</a></li>
+        <li> Photocard images: <a href="https://pocamarket.com/" target="_blank">Pocamarket</a></li>
+        <li> Photocard images: <a href="https://www.suruga-ya.com/en" target="_blank">SURUGA-YA</a></li>
+        <li> Photocard images: <a href="https://ifbearofficial.com/" target="_blank">IFBEAR</a></li>
+        <li> Photocard images: <a href="https://kpopmarket.co/" target="_blank">Kpop Market</a></li>
+    </ul>
+</div> <!-- About End -->
+<!-- Contact -->
+<div class="bg-top contact-page">
+<p>Feel free to reach out to me if you have any questions, suggestions, or feedback about the website. I appreciate your input!</p>
+    <hr>
+    <!-- Turned the form button into an anchor so it shares link styling with the nav -->
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd-AAPD98qPNYZLj_d-jL4sfqW6g9Ezy49xYmB7iDQheM2fFQ/viewform?usp=header" target="_blank"><button class="button-form">Feedback Form</button></a>
+    <p> Use this form if:
+    <ul>
+        <li>You want to report missing or incorrect content.</li>
+        <li>You want to report issues or give suggestions regarding accessibility.</li>
+        <li>Other feedback. </li>
+    </ul>
+    </p>
+    <hr>
+    <p>If the form doesn't meet your needs, I am also reachable by email.</p>
+        Email: <b> manyodev@outlook.com</b>
+</div> <!-- Contact End -->
+<div class="bg-top home-page">
+<!-- Sidebar --> <!-- <div class="sidebar"> 
+    <p>2018</p>
+    <a href="#mixtape">Mixtape</a>
+    <a href="#stay0th">Stay 0th</a>
+    <a href="#iamnot">I Am Not</a>
+    <a href="#iamnottw">I Am Not (Taiwan Edition)</a>
+    <a href="#iamnotuv">I Am Not (Unveil)</a>
+    <a href="#iamwho">I Am Who</a>
+    <a href="#iamwhouv">I Am Who (Unveil)</a>
+    <a href="#iamyou">I Am You</a>
+    <a href="#iamyoutw">I Am You (Taiwan Edition)</a>
+    <a href="#iamyouuv">I Am You (Unveil)</a>
+    <a href="#iamyoumg">I Am You (Meet & Greet)</a>
+    <p>2019</p>
+    <a href="#cle1">Clé 1 : MIROH</a>
+    <a href="#stay1st">Stay 1st</a>
+    <a href="#cle2">Clé 2 : Yellow Wood</a>
+    <a href="#cle2tw">Clé 2 : Yellow Wood (Taiwan Edition)</a>
+    <a href="#cle3">Clé : Levanter</a>
+    <p>2020</p>
+    <a href="#skz2020">SKZ2020</a>
+    <a href="#topjp">Top</a>
+    <a href="#golive">GO生 (Go Live)</a>
+    <a href="#inlife">IN生 (In Life)</a>
+    <a href="#allin">All In</a>
+    <p>2021</p>
+    <a href="#noeasy">NOEASY</a>
+    <a href="#scars">SCARS</a>
+    <a href="#evel">Christmas EveL</a>
+    <a href="#stay2nd">Stay 2nd</a>
+    <p>2022</p>
+    <a href="#odd">Oddinary</a>
+    <a href="#circus">Circus</a>
+    <a href="#max">Maxident</a>
+    <a href="#stay3rd">Stay 3rd</a>
+    <a href="#skzreplay">SKZ-Replay</a>
+    <p>2023</p>
+    <a href="#sound">The Sound</a>
+    <a href="#5star">5-Star</a>
+    <a href="#socialpath">Social Path</a>
+    <a href="#rockstar">樂-STAR (Rock-Star)</a>
+    <p>2024</p>
+    <a href="#stay4th">Stay 4th</a>
+    <a href="#ate">ATE</a>
+    <a href="#giant">GIANT</a>
+    <a href="#hop">HOP</a>
+    <p>2025</p>
+    <a href="#stay5th">Stay 5th</a>
+    <a href="#hollow">Hollow</a>
+    <a href="#karma">KARMA</a>
+</div> -->
+<!-- Main Content --> 
+    <!-- Logo & Signatures --> <div class="album"> 
     <img src="pngwing.com.png" alt="Image failed :(" width="30%">
     <p> Fun fact: Bang Chan created the Stray Kids logo. You'll notice the logo is in his handwriting.</p>
     <h1>Signatures</h1>
@@ -92,12 +224,13 @@
 </div>
 <div>I.N
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/I.N_Signature_02.png/330px-I.N_Signature_02.png" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <!-- Mixtape --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/9/94/Stray_Kids_Mixtape.jpg" alt="Image failed :(" width="10%" id="mixtape">
     <h1> Mixtape</h1>
     <p> 2018 ~ Pre-debut Mixtape</p>
-</div> </div>
+</div>
 <!-- Mixtape Selca--> <div class="member">
 <div> Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/11/11/f1967f91fe5b4561a118bab64cd8a1aa.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
@@ -152,7 +285,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/11/fe53e780368e428db3241337c7f50f22.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">
     Making
 </div>
@@ -161,7 +295,7 @@
     <h1> Stray Kids Official Fan Club: 0th Generation</h1>
     <h1> Official Fanclub STAY: 0th Generation</h1>
     <p> 2018 ~ Official Fanclub Opens, Active February 9, 2018 - March 25, 2019</p>
-</div> </div>
+</div>
 <!--Official Fanclub STAY: 0th --> <div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/26/29f4f69fb48c43ef9c58c213c81d0987.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
@@ -186,13 +320,14 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/26/3efa0233a986458b866be4ca12420716.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">0th Generation</div>
 <!-- I Am Not --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/1/14/Stray_Kids_Debut_Album.jpg" alt="Image failed :(" width="10%" id="iamnot">
     <h1> I Am Not</h1>
     <p> 2018 ~ Debut Mini Album</p>
-</div> </div>
+</div>
 <!-- I Am Not --> <div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/4900d3e2622242feac45d26904ca6fd5.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -217,7 +352,8 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/09/24/dc87c1f696c3454491209e98b0d2caa3.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Selca</div>
 <div class="member">
 <div>Bang Chan
@@ -243,13 +379,14 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2025/04/02/09b1741568ef4bcd8f6759f24f61dd95.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Childhood Photo</div>
 <!-- I Am Not: Special Edition --> <div class="album">
     <img src="https://st.cdjapan.co.jp/pictures/l/15/00/NEOIMP-15922.jpg" alt="Image failed :(" width="10%" id="iamnottw">
     <h1> I Am Not: Special Edition</h1>
     <p> 2018 ~ Exclusive Taiwan Release</p>
-</div> </div>
+</div>
 <!-- I Am Not: Special Edition --> <div class="member">
 <div>Bang Chan
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/01/31/1578cf10765b41f7832535ea6cf1e18c.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
@@ -274,13 +411,14 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2025/01/31/78047e6e97704f87aa1a0f4f66cf2c20.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Taiwan Edition</div>
 <!-- Unveil [OP.01:I am NOT]--> <div class="album">
     <img src="non-ph-images/UNVEIL_IamNOT.jpeg" alt="Image failed :(" width="20%" id="iamnotuv">
     <h1> Unveil [OP.01:I am NOT]</h1>
     <p> 2018 ~ Debut Showcase</p>
-</div> </div>
+</div>
 <!-- Unveil [OP.01:I am NOT] --> <div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/08/497d24b41f4540f5ab17d44246a305eb.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
@@ -305,7 +443,8 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/22/7dc097b6bf81494190a69ed5c49051b2.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="gold-text">Photocard Set</span></div>
 <div class="member">
 <div>Bang Chan
@@ -400,7 +539,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/en/f/ff/Stray_Kids_I_Am_Who_album_cover.jpg" alt="Image failed :(" width="10%" id="iamwho">
     <h1> I Am Who</h1>
     <p> 2018 ~ Second Mini Album</p>
-</div> </div>
+</div>
 <!-- I Am Who --><div class="member">
 <div>Bang Chan
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/7c5d0cfdc3d643c78bcb73c5bfb0435b.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
@@ -425,7 +564,8 @@
 </div>
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/19/2582d6e1b8824482a98fca52adb24cf7.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Black</div>
 <div class="member">
 <div>Bang Chan
@@ -459,7 +599,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/6811db1163f743e58a1acadd4b47f99d.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Yellow</div>
 <div class="member">
 <div>Bang Chan
@@ -493,7 +634,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/c9ba21e60b1c4777957727ec1a65588d.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">White</div>
 <div class="member">
 <div>Bang Chan
@@ -527,7 +669,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/04bf2a75c35e4af194b0ab63be1e7e3a.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Making</div>
 <div class="member">
 <div>Bang Chan
@@ -561,7 +704,8 @@
 <div>I.N
          <img src="https://cdn.suruga-ya.com/database/pics_webp/game/gl636670.jpg.webp" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Self-Portrait</div>
 <div class="member">
 <div>Bang Chan
@@ -589,14 +733,15 @@
 </div>
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/10ca1e4a78fa464885869f1bebdc73f6.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="gold-text">Broadcast</span></div>
 
 <!-- UNVEIL "Op. 02 : I am WHO" --> <div class="album">
     <img src="non-ph-images/UNVEIL_IamWHO.webp" alt="Image failed :(" width="20%" id="iamwhouv">
     <h1> UNVEIL "Op. 02 : I am WHO"</h1>
     <p> 2018 ~ 2nd Showcase</p>
-</div> </div>
+</div>
 <!-- UNVEIL "Op. 02 : I am WHO" --> <div class="member">
 <div>Bang Chan
         <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
@@ -621,7 +766,8 @@
 <div>I.N
         <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="gold-text">Polaroid Set</span></div>
 <div class="member">
 <div>Bang Chan
@@ -661,14 +807,15 @@
 <div>I.N
     <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
     <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="gold-text">Lucky Envelope</span></div>
 
 <!-- I Am You --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/1/11/I_Am_You_Album_Cover.jpeg" alt="Image failed :(" width="10%" id="iamyou">
     <h1> I Am You</h1>
     <p> 2019 ~ Third Mini Album</p>
-</div> </div>
+</div>
 <!-- I Am You --><div class="member">
 <div>Bang Chan
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/8702d7ae81ba4cb48f48a993f54a87b3.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -693,7 +840,8 @@
 </div>
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2025/04/08/047db5779dbb460eb2a42a5b827045ad.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Pink</div>
 <div class="member">
 <div>Bang Chan
@@ -719,7 +867,8 @@
 </div>
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/4f51d7a7f2e24add9e74eb6a8c4eebd5.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Name</div>
 <div class="member">
 <div>Bang Chan
@@ -745,7 +894,8 @@
 </div>
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/bf2956a6db9a4bba8db68963c2727012.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">I am YOU</div>
 <div class="member">
 <div>Bang Chan
@@ -771,7 +921,8 @@
 </div>
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/09/24/058b99bb4e1f42ecbadaaaa2e76e3c2a.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Polaroid</div>
 <div class="member">
 <div>Bang Chan
@@ -806,14 +957,15 @@
 <div>I.N
 
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/34a111e93c0b4044813d1951f8b2bd5f.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">POB</span></div>
 
 <!-- I Am You: Special Edition --> <div class="album">
     <img src="https://st.cdjapan.co.jp/pictures/l/15/05/NEOIMP-16487.jpg" alt="Image failed :(" width="10%" id="iamyoutw">
     <h1> I Am You: Special Edition</h1>
     <p> 2018 ~ Exclusive Taiwan Release</p>
-</div> </div>
+</div>
 <!-- I Am You: Special Edition --><div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/285945f141f34823b123d3836de68a8e.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
@@ -845,7 +997,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/b81c49fe7c7b41918f7d47349f7f5f15.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="gold-text">Taiwan Ver.</span></div>
 <div class="member">
 <div>Bang Chan
@@ -883,14 +1036,15 @@
 <div>I.N
     
     <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="gold-text">Taiwan Polaroid</span></div>
 
 <!-- UNVEIL "Op. 03 : I am YOU" --> <div class="album">
     <img src="non-ph-images/UNVEIL__IamYOU.webp" alt="Image failed :(" width="20%" id="iamyouuv">
     <h1> UNVEIL "Op. 03 : I am YOU"</h1>
     <p> 2018 ~ 3rd Showcase</p>
-</div> </div>
+</div>
 <!-- UNVEIL "Op. 03 : I am YOU" --> <div class="member">
 <div>Bang Chan
         <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
@@ -916,7 +1070,8 @@
 </div>
 <div>I.N
         <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="gold-text">Polaroid Set</span></div>
 <div class="member">
 <div>Bang Chan
@@ -966,14 +1121,15 @@
          <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
          
          <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="gold-text">Lucky Envelope</span></div>
 
 <!-- MEET&GREET ~ I Am You --> <div class="album">
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PnxLQd9J7rE?si=uDbtkFBYbtrIEaGZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="iamyoumg"></iframe>
     <h1>MEET&GREET ~ I Am You</h1>
     <p> 2019 ~ 1st Online Fan Meeting</p>
-</div> </div>
+</div>
  <!-- MEET&GREET ~ I Am You --><div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/ee9b25dab1614986bc667dba73552455.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
@@ -998,14 +1154,15 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/8e73d9666ecd44d9a7fcc1573d240af5.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Meet&Greet</div>
 
 <!-- Clé 1 : MIROH --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/0/07/Stray_Kids_-_Cl%C3%A9_1_-_Miroh.png" alt="Image failed :(" width="10%" id="cle1">
     <h1> Clé 1 : MIROH</h1>
     <p> 2019 ~ 4th Mini Album, Released on 1-Year Anniversary</p>
-</div> </div>
+</div>
 <!-- Clé 1 : MIROH -->
  <div class="member">
 <div>Bang Chan
@@ -1039,7 +1196,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/d03c49925a734d1695a9c220814bb767.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">SKZ</div>
 <div class="member">
 <div>Bang Chan
@@ -1073,7 +1231,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/d442d6550fc84cd0acbb3f391591f54a.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Clé 1 : MIROH</div>
 <div class="member">
 <div>Bang Chan
@@ -1106,7 +1265,8 @@
 </div>
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/298b091ab30d4d0dae3f93cc0a28ecc5.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Red</div>
 <div class="member">
 <div>Bang Chan
@@ -1140,7 +1300,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/0b268ee82cc245e78340801ad2b9bf09.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Black</div>
 <div class="member">
 <div>Bang Chan
@@ -1174,7 +1335,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/03847cf3fb394c55bd3bad9e6509b1ee.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Purple</div>
 <div class="member">
 <div>Bang Chan
@@ -1200,7 +1362,8 @@
 </div>
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/05/4645d3625184476e8c822c837470f244.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Limited</div>
 
 <!--Official Fanclub STAY: 1st --> <div class="album">
@@ -1208,7 +1371,7 @@
     <h1>STAY 1ST OFFICIAL FANSHIP KIT</h1>
     <h1> Official Fanclub STAY: 1st Generation</h1>
     <p> 2019 ~ 2nd Fanclub membership period, Active March 25, 2019 - February 28, 2021</p>
-</div> </div>
+</div>
 <!--Official Fanclub STAY: 1st --><div class="member">
 <div>Bang Chan
     <img src=https://ndc.infludeo.com/media/photocard_blur/2024/08/26/c0a3b8e26ec446878f86d2e8877bd5bc.jpg?f=auto&q=75&w=640 alt="Image failed :(" width="100%">
@@ -1233,14 +1396,15 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/26/cafff9d3fc12409c88bd2e6cadb1aa39.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Polaroid Set</div>
 
 <!-- Clé 2 : Yellow Wood --> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/7/71/Stray_Kids_Yellow_Wood.jpg" width="10%" id="cle2">
 <h1>Clé 2 : Yellow Wood</h1>
 <p>2019 ~ 5th Mini Album, featuring re-recorded pre-debut songs</p>
-</div> </div>
+</div>
 <!-- Clé 2 : Yellow Wood -->
  <div class="member">
 <div>Bang Chan
@@ -1274,7 +1438,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/08/996d3f0e639f48aa820d807050404f36.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Black</div>
 <div class="member">
 <div>Bang Chan
@@ -1308,7 +1473,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/08/bc32d591df7148ab87f237ae9cd67427.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Yellow</div>
 <div class="member">
 <div>Bang Chan
@@ -1342,7 +1508,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/08/8e813d4cb81649cab7e7827dbd0451fc.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Indoor</div>
 <div class="member">
 <div>Bang Chan
@@ -1375,7 +1542,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/08/ef70eeb5d5ec4d56aba3cb23eb1a78c9.jpg?f=auto&q=75&w=96" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Outdoor</div>
 <div class="member">
 <div>Bang Chan
@@ -1409,7 +1577,8 @@
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/08/6763d0b621574d15942ceca9b356a330.jpg?f=auto&q=75&w=96" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Concept</div>
 <div class="member">
 <div>Bang Chan
@@ -1435,14 +1604,15 @@
 </div>
 <div>I.N
         <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/08/d937375b76c5412a83a1152c3390b702.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">POB</span></div>
 
 <!--Clé 2 : Yellow Wood : Special Edition --> <div class="album">
     <img src="https://st.cdjapan.co.jp/pictures/l/15/05/NEOIMP-16487.jpg" alt="Image failed :(" width="10%" id="cle2tw">
     <h1> Clé 2 : Yellow Wood : Special Edition</h1>
     <p> 2019 ~ Exclusive Taiwan Release</p>
-</div> </div>
+</div>
 <!--Clé 2 : Yellow Wood : Special Edition --> <div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/08/1421f8f06efd49b3a7989bb2a14aae30.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -1482,7 +1652,8 @@
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/08/610ee7a923d141119720ad4324d67006.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Photocard</div>
 <div class="member">
 <div>Bang Chan
@@ -1508,14 +1679,15 @@
 </div>
 <div>I.N
 <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Polaroid</div>
 
 <!--Clé : Levanter--> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/1/1c/Stray_Kids_-_Cl%C3%A9_Levanter.jpg" width="10%" id="cle3">
 <h1>Clé : Levanter</h1>
 <p>2019 ~ 6th Mini Album</p>
-</div> </div>
+</div>
 <!--Clé : Levanter--><div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/25/4a7a2872cdca46b3bfe90c5ba2e42cc0.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -1548,7 +1720,8 @@
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/05/23/09d29d16aad84797bf0ec50b9ee972e1.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Gray</div>
 <div class="member">
 <div>Bang Chan
@@ -1582,7 +1755,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/25/6bc10a304db046c289e1455707500fb7.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Name</div>
 <div class="member">
 <div>Bang Chan
@@ -1616,7 +1790,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/25/cc85eb37304944dc872e580f2b80f50c.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Blue</div>
 <div class="member">
 <div>Bang Chan
@@ -1650,7 +1825,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/25/3e449fb12d1f4f49b424e1de0aab6fcc.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Selca</div>
 <div class="member">
 <div>Bang Chan
@@ -1676,20 +1852,21 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/25/9bea83e298114963933932ca45bb69df.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Clé</div>
 
 <!--Step Out of Clé--> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/e/e0/Stray_Kids_-_Step_Out_of_Cl%C3%A9.png" width="10%" >
 <h1 id="2020">Step Out of Clé</h1>
 <p>2020 ~ Digital Release (no physical album or photocards), First Full-English Songs</p>
-</div> </div>
+</div>
 
 <!--SKZ2020--> <div class="album">
 <img src="https://upload.wikimedia.org/wikipedia/en/3/3e/Stray_Kids_-_SKZ2020.jpg" width="10%" id="skz2020">
 <h1>SKZ2020</h1>
 <p>2020 ~ 1st Compilation Album + Japan Debut</p>
-</div> </div>
+</div>
 <!--SKZ2020-->
 <div class="poca">*Japanese photocards coming soon*</div>
 
@@ -1697,7 +1874,7 @@
 <img src="https://upload.wikimedia.org/wikipedia/en/a/a5/Stray_Kids_-_Top_%28Korean_ver.%29.jpg" width="10%" id="topjp">
 <h1>TOP</h1>
 <p>2020 ~ Japanese Release, OST for "Tower of God"</p>
-</div> </div>
+</div>
 <!-- TOP -->
 <div class="poca">*Japanese photocards coming soon*</div>
 
@@ -1739,7 +1916,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/09/26/79499b7558f14f3c9abb33bdaf745bf7.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Selca A</div>
 <div class="member">
 <div>Bang Chan
@@ -1773,7 +1951,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/12/d32272c9c5154abb85a022d2a4e8e3b4.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Selca B</div>
 <div class="member">
 <div>Bang Chan
@@ -1807,7 +1986,8 @@
 <div>I.N
     <img src="https://ifbearofficial.com/cdn/shop/files/file186.png?v=1738999238&width=533" alt="Image failed :(" width="100%">
     <img src="https://ifbearofficial.com/cdn/shop/files/file185.png?v=1739000697&width=533" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Double-Sided Indoors</div>
 <div class="member">
 <div>Bang Chan
@@ -1841,7 +2021,8 @@
 <div>I.N
     <img src="https://ifbearofficial.com/cdn/shop/files/file201.png?v=1739002035&width=720" alt="Image failed :(" width="100%">
     <img src="https://ifbearofficial.com/cdn/shop/files/file202.png?v=1739339662&width=533" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Double-Sided Outdoors</div>
 <div class="member">
 <div>Bang Chan
@@ -1875,7 +2056,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/04/bb8af5c115d34554b0bf6021d37ba660.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Mixtape : On Track</div>
 <div class="member">
 <div>Bang Chan
@@ -1908,7 +2090,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/04/db1573b6073c46d6b37181f91bee2b3e.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Limited</div>
 <div class="member">
 <div>Bang Chan
@@ -1934,7 +2117,8 @@
 </div>
 <div>I.N
     <img src="PlaceHolder.png" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">Polaroid</span></div>
 
 <!-- <p> This is an example of a double-sided photocard </p>-->
@@ -1975,7 +2159,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/22/489424cb8806468991079b5524ac8de3.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Double-Sided A</div>
 <div class="member">
 <div>Bang Chan
@@ -2009,7 +2194,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/04/b7ffb3d28f954e11845ad6383e40c419.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Double-Sided B</div>
 <div class="member">
 <div>Bang Chan
@@ -2035,7 +2221,8 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2025/04/02/d43ad37463724bdcb19b2af42855e298.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Concept</div>
 
 <!-- ALL IN --> <div class="album">
@@ -2083,7 +2270,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2025/01/24/fb366fe2307845f4b78b961cc75819d6.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Luxury</div><div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2025/04/28/ec7514e8b3054002b6a981304d6f174f.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -2116,7 +2304,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/25/eea230e1670a470aa75e88223e8ee9de.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Silk</div><div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/25/b33f33993ee648c7b1c8e319a50d2b5e.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -2149,7 +2338,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2025/05/19/ba563bfbcb3d4b97a77001bb3f215dd3.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Red</div><div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/25/773dce05ab6f432eb63bfa0856cf3795.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -2182,7 +2372,8 @@
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2025/01/24/db18c5dae1a4403f8a9fb2eb7fd57da4.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Casual</div><div class="member">
 <div>Bang Chan
     <img src="https://kpopmarket.co/cdn/shop/files/bangchan_54d1f608-dcd5-4495-82b8-3ae899d7549f_960x.jpg?v=1698389093" alt="Image failed :(" width="100%">
@@ -2215,7 +2406,8 @@
 <div>I.N
     <img src="https://kpopmarket.co/cdn/shop/files/i.n_d3efde3e-ab0f-475a-ba2e-7296e66cb893_960x.jpg?v=1698389093" alt="Image failed :(" width="100%">
 
-</div> </div>
+</div>
+</div>
 <div class="poca">Double-Sided</div><div class="member">
 <div>Bang Chan
     <img src="https://ndc.infludeo.com/media/photocard_blur/2022/09/29/f785f27e43d049b89df9f13ecf34e3c7.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -2247,7 +2439,8 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2023/05/17/323c3f3426184e0d935dd07cd5cf89fa.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Limited Set</div>
 <div class="member">
 <div>Bang Chan
@@ -2273,7 +2466,8 @@
 </div>
 <div>I.N
     <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/19/3241feccdae6493bb2fb177827bf5955.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Jewel Case</div>
 <div class="poca">*Store POBs coming soon*</div>
 
@@ -2281,7 +2475,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Stray_Kids_-_Scars_-_Thunderous_Japanese.jpeg" alt="Image failed :(" width="20%" id="scars">
     <h1> Scars</h1>
     <p> 2021 ~ Japanese Release</p>
-</div> </div>
+</div>
 <!-- Scars -->
 <div class="poca">*Japanese photocards coming soon*</div>
 
@@ -2289,7 +2483,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/Stray_Kids_-_Christmas_EveL.jpeg" alt="Image failed :(" width="20%" id="evel">
     <h1> Christmas EveL</h1>
     <p> 2021 ~ Holiday Special Album</p>
-</div> </div>
+</div>
 <!-- Christmas EveL --> <div class="member">
 <div>Bang Chan
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/26/9d95c64c20214bf8a4b46af3364fe3a4.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -2314,7 +2508,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/05/07/37d8ada911704a0c8f23a93cf697d2bb.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <!-- Bow -->
 <div class="poca">Bow</div>
 <div class="member">
@@ -2341,7 +2536,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/26/6bd2de2cb0c54bd792cef941d2fbfb9e.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Tie</div>
 <div class="member">
 <div>Bang Chan
@@ -2367,7 +2563,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/26/116c32f162e4408d9b6c5cabcf6afab2.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Glitter</div>
 <div class="member">
 <div>Bang Chan
@@ -2393,25 +2590,26 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/11/27/9b9bd7e041cd4b259224a8a92f880ea3.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">POB Set</div>
 
 <!--Official Fanclub STAY: 2nd, between NOEASY & Christmas Evel --> <div class="album">
     <img src="non-ph-images/Fanclub-2NDGEN-Poster.webp" alt="Image failed :(" width="20%" id="stay2nd">
     <h1> Official Fanclub STAY: 2nd Generation</h1>
     <p> 2021 ~ Active October 25, 2021 - October 24, 2022</p>
-</div> </div>
+</div>
 
 <!-- SKZ2021 --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/a/ad/Stray_Kids_-_SKZ2021.jpeg" alt="Image failed :(" width="20%">
     <h1> SKZ2021</h1>
     <p> 2021 ~ 2nd Compilation Album, Digital Release (No Physical Merch)</p>
-</div> </div>
+</div>
 <!-- Oddinary --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/4/45/Stray_Kids_-_Oddinary.jpeg" alt="Image failed :(" width="20%" id="odd">
     <h1 id="2022"> Oddinary</h1>
     <p> 2022 ~ 6th Mini Album</p>
-</div> </div>
+</div>
 <!-- Oddinary --> <div class="member">
 <div>Bang Chan
 <img src="https://ndc.infludeo.com/media/photocard_blur/2022/09/29/2aa3c334b58546e1a77f33ef3680927b.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -2436,7 +2634,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2022/09/29/55c2ec1ce5764728a2dcf538f924abc1.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Frankenstein</div>
 <div class="member">
 <div>Bang Chan
@@ -2462,7 +2661,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/22/2e7c589af6484a9483640fbdb4040300.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Mask Off</div>
 <div class="member">
 <div>Bang Chan
@@ -2488,7 +2688,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/05/07/b76b9d12f25f4629a756d6204de4120a.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Scanning</div>
 <div class="member">
 <div>Bang Chan
@@ -2514,7 +2715,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/30/a6a56cefcf8548ae87b227d0543b3b33.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">ID</div>
 <div class="member">
 <div>Bang Chan
@@ -2540,14 +2742,15 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/30/eb584c2259b5431eadfe52602c63b9aa.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Jewel Case</div>
 
 <!-- Circus --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/8/82/Stray_Kids_-_Circus_%28Regular%29.jpeg" alt="Image failed :(" width="20%" id="circus">
     <h1> Circus</h1>
     <p> 2022 ~ 2nd Japanese EP</p>
-</div> </div>
+</div>
 <!-- Circus -->
  <div class="poca">*Japanese photocards coming soon*</div>
  
@@ -2555,7 +2758,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/en/d/de/Stray_Kids_-_Maxident.png" alt="Image failed :(" width="20%" id="max">
     <h1> Maxident</h1>
     <p> 2022 ~ 7th Mini Album</p>
-</div> </div>
+</div>
 <!-- Maxident --> <div class="member">
 <div>Bang Chan
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/31/fc89cf8444fd414bb9f6115b266f2af2.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -2580,7 +2783,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/05/07/d8d1a4dafc774539876310a3de49824f.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">GO</div>
 <div class="member">
 <div>Bang Chan
@@ -2606,7 +2810,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/31/03867572dff34a80b2fdc6ab47b6c021.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">T-Crush</div>
 <div class="member">
 <div>Bang Chan
@@ -2632,7 +2837,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/06/11/755b66a3455442df81c5267da9c8d59f.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Heart</div>
 <div class="member">
 <div>Bang Chan
@@ -2658,7 +2864,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/31/ba9e440938544ab7861eb6cb709f6f1c.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">Polaroid POB</span></div>
 <div class="member">
 <div>Bang Chan
@@ -2684,7 +2891,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/31/dc39f3911efd42df9d6edad7139b4ba4.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Case</div>
 <div class="member">
 <div>Bang Chan
@@ -2710,14 +2918,15 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/31/454868ecbb294690beffc0523fb2a020.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">Case POB</span></div>
 
 <!--Official Fanclub STAY: 3rd --> <div class="album">
     <img src="non-ph-images/Fanclub_3rd_Gen_Preview_Poster.webp" alt="Image failed :(" width="20%" id="stay3rd">
     <h1> Official Fanclub STAY: 3rd Generation</h1>
     <p> 2022 ~ Active October 27, 2022 - December 31, 2023 (Includes SKZ-Replay).</p>
-</div> </div>
+</div>
 <!--Official Fanclub STAY: 3rd --> <div class="member">
 <div>Bang Chan
 
@@ -2742,13 +2951,14 @@
 </div>
 <div>I.N
 
-</div> </div>
+</div>
+</div>
 
 <!-- SKZ-Replay --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/4/4c/Stray_Kids_-_SKZ-Replay.png" alt="Image failed :(" width="20%" id="skzreplay">
     <h1> SKZ-Replay</h1>
     <p> 2022 ~ 3rd Compilation Album (The physical album came included in Official Fanclub STAY: 3rd Generation. It was not sold seperately).</p>
-</div> </div>
+</div>
 <!-- SKZ-Replay --> <div class="member">
 <div>Bang Chan
 
@@ -2773,13 +2983,14 @@
 </div>
 <div>I.N
 
-</div> </div>
+</div>
+</div>
 
 <!-- The Sound --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/8/8f/Stray_Kids_-_The_Sound.png" alt="Image failed :(" width="20%" id="sound">
     <h1> The Sound</h1>
     <p> 2023 ~ 3rd Japanese Album</p>
-</div> </div>
+</div>
 <!-- The Sound -->
  <div class="poca">*Japanese photocards coming soon*</div>
  
@@ -2787,7 +2998,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/en/5/52/Stray_Kids_-_5-Star.png" alt="Image failed :(" width="20%" id="5star">
     <h1> 5-STAR</h1>
     <p> 2023 ~ 3rd Full Album</p>
-</div> </div>
+</div>
 <!-- 5-STAR --> <div class="member">
 <div>Bang Chan
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/06/02/6c66b9cef3914f0c98697b7f71d30e0e.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -2812,7 +3023,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/06/04/4f2d19bf2e194cb7ac3b1772d8e89660.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">High Selca</div>
 <div class="member">
 <div>Bang Chan
@@ -2838,7 +3050,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/06/04/0ed06c21daac47179fac67a7d41080c4.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Close Selca</div>
 <div class="member">
 <div>Bang Chan
@@ -2864,7 +3077,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/06/02/6479a0bd7b454a47957039fb048df743.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Double-Sided</div>
 <div class="member">
 <div>Bang Chan
@@ -2890,7 +3104,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/06/05/b4967069eb6842f5aea17df5fd214105.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Digipack</div>
 <div class="member">
 <div>Bang Chan
@@ -2916,14 +3131,15 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/28/e4e42b6789d547c7b549e6f430377079.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">Digipack POB</span></div>
 
 <!-- Social Path --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/d/d5/Stray_Kids_-_Social_Path_%28Feat._Lisa%29_Super_Bowl_%28Japanese_Ver.%29.png" alt="Image failed :(" width="20%" id="socialpath">
     <h1> Social Path</h1>
     <p> 2023 ~ 3rd Japanese EP</p>
-</div> </div>
+</div>
 <!-- Social Path -->
  <div class="poca">*Japanese photocards coming soon*</div>
  
@@ -2932,7 +3148,7 @@
     <h1>樂-STAR</h1>
     <h1> Rock-Star</h1>
     <p> 2023 ~ 8th Korean EP</p>
-</div> </div>
+</div>
 <!-- Rock-Star --> <div class="member">
 <div>Bang Chan
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/11/13/0fd4f4acca604645ac01163b50658981.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -2957,7 +3173,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/06/03/a6738b1ecbdc4caab0a672ecc1d903aa.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Double-Sided</div>
 <div class="member">
 <div>Bang Chan
@@ -2983,7 +3200,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/06/11/6bbfcbea265c4a499597fce829fadc35.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Headliner</div>
 <div class="member">
 <div>Bang Chan
@@ -3009,7 +3227,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/11/13/2615dce6627742c9b568022258ded54c.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Concept</div>
 <div class="member">
 <div>Bang Chan
@@ -3035,7 +3254,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/28/384ac6a187494345baeb78f4fc972b98.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">Postcard POB</span></div>
 <div class="member">
 <div>Bang Chan
@@ -3061,7 +3281,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/11/13/5481c6cf7e6b43ad830130e56bd1ebd7.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Postcard</div>
 <div class="member">
 <div>Bang Chan
@@ -3087,7 +3308,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/28/e2c0c9475d3f4351851fa4cd9c1240ad.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">Film Set POB</span></div>
 <div class="member">
 <div>Chan & Changbin
@@ -3101,7 +3323,8 @@
 </div>
 <div>Seungmin & I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/06/03/6e795ec37462445a94019f49fd743a9b.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">UNIT</div>
 <div class="member">
 <div>Bang Chan
@@ -3127,19 +3350,20 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2023/11/13/f792a10fa4804174909731807c1f3f25.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Nemo</div>
 
 <!--Official Fanclub STAY: 4th --> <div class="album">
     <img src="non-ph-images/Fanclub_4th_Gen_Preview_Poster.webp" alt="Image failed :(" width="20%" id="stay4th">
     <h1> Official Fanclub STAY: 4th Generation</h1>
     <p> 2024 ~ Active January 15, 2024 - January 17, 2025</p>
-</div> </div>
+</div>
 <!-- ATE --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/d/d6/Stray_Kids_-_Ate.png" alt="Image failed :(" width="20%" id="ate">
     <h1 id="2024"> ATE</h1>
     <p> 2024 ~ 9th Korean EP</p>
-</div> </div>
+</div>
 <!-- ATE --> <div class="member">
 <div>Bang Chan
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/22/9f5ec50407664ec88d90e6c022f2c87f.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
@@ -3164,7 +3388,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/22/d83630c905b94395b85261811e6ef5cc.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">ATE</div>
 <div class="member">
 <div>Bang Chan
@@ -3190,7 +3415,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/22/a18ce1c72f2d426098db791e1af20d03.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">CHK CHK</div>
 <div class="member">
 <div>Chan & Felix
@@ -3204,7 +3430,8 @@
 </div>
 <div>Han & Seungmin
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/22/9253a3ddd51143e1b86f84d6fe7cce14.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Unit</div>
 <div class="member">
 <div>Bang Chan
@@ -3230,7 +3457,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/22/8fc0616ba0cc450ea09dbcc5666fbb5d.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">BOOM (Double-Sided)</div>
 <div class="member">
 <div>Chan & Changbin
@@ -3244,7 +3472,8 @@
 </div>
 <div>Han & Felix
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/22/4b34c79433dc4fa98d87674269e93798.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Unit</div>
 <div class="member">
 <div>Bang Chan
@@ -3270,7 +3499,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/22/4bffd381615a4102bd591e3945ed1e23.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Accordion</div>
 <div class="member">
 <div>Bang Chan
@@ -3296,7 +3526,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/28/8f85cc652ebc4663b9129c2d5ba3f8fc.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">Accordion POB</span></div>
 <div class="member">
 <div>Bang Chan
@@ -3322,7 +3553,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/08/28/a07a885a47ef4361abb5c2b411969895.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca"><span class="pink-text">Letter POB</span></div>
 <div class="member">
 <div>Bang Chan
@@ -3348,7 +3580,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/23/f4622836b09d4a668bb1238c2d76df41.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Nemo A</div>
 <div class="member">
 <div>Bang Chan
@@ -3374,7 +3607,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/30/2202effea22b493cb6b7fa0bbb0a60a8.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Nemo A Set</div>
 <div class="member">
 <div>Bang Chan
@@ -3400,7 +3634,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/23/7fcce95d6f544a9c96f3cc4d09eeaece.jpg?f=auto&q=75&w=640" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Nemo B</div>
 <div class="member">
 <div>Bang Chan
@@ -3426,14 +3661,15 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/07/23/fc164e07307a4df18a4f9477d971e94b.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Nemo B Set</div>
 
 <!-- GIANT --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/d/d3/Stray_Kids_-_Giant.png" alt="Image failed :(" width="20%" id="giant">
     <h1> GIANT</h1>
     <p> 2024 ~ 2nd Japanese Album</p>
-</div> </div>
+</div>
 <!-- GIANT -->
   <div class="poca">*Japanese photocards coming soon*</div>
   
@@ -3442,7 +3678,7 @@
     <h1> HOP</h1>
     <h1>SKZHOP HIPTAPE</h1>
     <p> 2024 ~ 1st Official Mixtape</p>
-</div> </div>
+</div>
 <!-- HOP -->
 <div class="member">
 <div>Bang Chan
@@ -3468,7 +3704,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/66ed409adcae4f71bc6fedeaf829a087.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Accordion</div>
 <div class="member">
 <div>Bang Chan
@@ -3494,7 +3731,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/bfff7576f1e9492aa0a181c3b65c8a03.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Accordion Monochrome</div>
 <div class="member">
 <div>Bang Chan
@@ -3520,7 +3758,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/abda23424f7a41b0a2fcca8568a1b365.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Accordion POB</div>
 <div class="member">
 <div>Bang Chan
@@ -3546,7 +3785,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/3418aa8530a045e3a047667717e1dfff.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">SKZHOP Double-Sided</div>
 <div class="member">
 <div>Chan & Lee Know
@@ -3560,7 +3800,8 @@
 </div>
 <div>Seungmin & I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/9707dab1159e4f31a66cb8f1dccd0f36.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">SKZHOP Unit</div>
 <div class="member">
 <div>Bang Chan
@@ -3586,7 +3827,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/a0422160236041cebb649c24585566c4.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">HIPTAPE</div>
 <div class="member">
 <div>Chan & Felix
@@ -3600,7 +3842,8 @@
 </div>
 <div>Han & I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/d01f6a19d41a4eaba2e2e56a5fc16ce2.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">HIPTAPE Unit</div>
 <div class="member">
 <div>Bang Chan
@@ -3626,7 +3869,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/4982c77e8ffa480499d0309744c460f0.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">HIPTAPE Trading Card A</div>
 <div class="member">
 <div>Bang Chan
@@ -3652,7 +3896,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/5ab7475331e24f48b3930934d23ac971.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">HIPTAPE Trading Card B</div>
 <div class="member">
 <div>Bang Chan
@@ -3678,7 +3923,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/b1b6184689e244f6a87b19f7103f00d7.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Nemo</div>
 <div class="member">
 <div>Bang Chan
@@ -3704,25 +3950,26 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2024/12/16/503f731a54224093ae870a07d2bc0030.jpg?f=auto&q=75&w=256" alt="Image failed :(" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">Nemo Set</div>
 
 <!--Official Fanclub STAY: 5th --> <div class="album">
     <img src="non-ph-images/Fanclub_5th_Gen_Preview_Poster.webp" alt="Image failed :(" width="20%" id="stay5th">
     <h1> Official Fanclub STAY: 5th Generation</h1>
     <p> 2025 ~ Current</p>
-</div> </div>
+</div>
 
 <!-- Mixtape : dominATE --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/a/a3/Stray_Kids_-_Mixtape_Dominate.png" alt="Image failed :(" width="20%" id="dominate">
     <h1 id="2025">Mixtape : dominATE</h1>
     <p> 2025 ~ Special 7th Anniversary Album, Digital Release</p>
-</div> </div>
+</div>
 <!-- Hollow --> <div class="album">
     <img src="https://upload.wikimedia.org/wikipedia/en/e/e1/Stray_Kids_-_Hollow.png" alt="Image failed :(" width="20%" id="hollow">
     <h1> Hollow</h1>
     <p> 2025 ~ 4th Japanese EP</p>
-</div> </div>
+</div>
 <!-- Hollow -->
   <div class="poca">*Japanese photocards coming soon*</div>
 
@@ -3731,7 +3978,7 @@
     <img src="https://upload.wikimedia.org/wikipedia/en/6/67/Stray_Kids_-_Karma.png" alt="Karma (Stray Kids album)" width="20%" id="karma">
     <h1> KARMA </h1>
     <p> 2025 ~ The fourth studio album </p>
-</div> </div>
+</div>
 <!-- KARMA -->
 <div class="member">
 <div>Bang Chan
@@ -3757,7 +4004,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/61c10ff666e341d883bda7b17dc36be5.jpg?f=auto&q=75&w=640" alt="I.N KARMA" width="100%">
-</div> </div>
+</div>
+</div>
 <div class="poca">KARMA</div>
 <!-- KARMA SET -->
 <div class="member">
@@ -3784,7 +4032,8 @@
 </div>
 <div>I.N
 
-</div> </div>
+</div>
+</div>
 <div class="poca"> KARMA SET</div>
 <!-- KARMA UNIT -->
 <div class="member">
@@ -3797,8 +4046,9 @@
 <div>Hyunjin, I.N
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/fdef21fe45854684aa03f7321acb56e8.jpg?f=auto&q=75&w=640" alt="Hyunjin, I.N KARMA UNIT" width="100%">
-</div> </div>
-<div class="rachapoca">KARMA UNIT</div>
+</div>
+</div>
+<div class="poca">KARMA UNIT</div>
 <!-- HOORAY -->
 <div class="member">
 <div>Bang Chan
@@ -3824,7 +4074,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/ab4de17e97df4f6d9f0fd142350ffbf9.jpg?f=auto&q=75&w=640" alt="I.N KARMA Hooray Double Sided" width=100%>
-</div> </div>
+</div>
+</div>
 
 <div class="poca">Hooray</div>
 <!-- Ceremony -->
@@ -3852,7 +4103,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/53d55ba54bfc4c539b127ebdffc9cb70.jpg?f=auto&q=75&w=640" alt="I.N KARMA Ceremony" width=100%>
-</div> </div>
+</div>
+</div>
 <div class="poca">Ceremony</div>
 <!-- ACCORDION -->
 <div class="member">
@@ -3879,7 +4131,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/b48cd1e826084ac59e7d88d4242310f2.jpg?f=auto&q=75&w=640" alt="I.N ACCORDION" width=100%>
-</div> </div>
+</div>
+</div>
 <div class="poca">ACCORDION</div>
 <!-- ACCORDION POB -->
 <div class="member">
@@ -3906,7 +4159,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/e85a72925af44595929afb5e746b9846.jpg?f=auto&q=75&w=640" alt="I.N ACCORDION POB" width=100%>
-</div> </div>
+</div>
+</div>
 <div class="poca">ACCORDION POB</div>
 <!-- COMPACT SET -->
 <div class="member">
@@ -3933,7 +4187,8 @@
 </div>
 <div>I.N
 
-</div> </div>
+</div>
+</div>
 <div class="poca">COMPACT SET</div>
 <!-- COMPACT POB -->
 <div class="member">
@@ -3960,7 +4215,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/2635b3794d2d4f5b87172dd5c2826a35.jpg?f=auto&q=75&w=640" alt="I.N COMPACT POB" width=100%>
-</div> </div>
+</div>
+</div>
 <div class="poca">COMPACT POB</div>
 <!-- SKZOO -->
 <div class="member">
@@ -3987,7 +4243,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/f678ae7f47cd4b1b835c1edbe4e11fc2.jpg?f=auto&q=75&w=640" alt="I.N KARMA SKZOO" width=100%>
-</div> </div>
+</div>
+</div>
 <div class="poca">SKZOO</div>
 <!-- SKZOO SET -->
 <div class="member">
@@ -4014,7 +4271,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/08144ca677964d75a17586f05c887c3a.jpg?f=auto&q=75&w=640" alt="I.N KARMA SKZOO SET" width=100%>
-</div> </div>
+</div>
+</div>
 <div class="poca">SKZOO SET</div>
 <!-- SKZOO POB -->
 <div class="member">
@@ -4041,10 +4299,11 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/25/25027bd64b084f15bb11f0c7a7fa9649.jpg?f=auto&q=75&w=640" alt="I.N SKZOO POB" width=100%>
-</div> </div>
+</div>
+</div>
 <div class="poca">SKZOO POB</div>
 <!-- KARMA STORE POBS -->
-<div class="titlepoca">*Store POBS (Incomplete)*</div>
+<div class="poca">*Store POBS (Incomplete)*</div>
 <!-- FANS SHOP -->
 <div class="member">
 <div>Bang Chan
@@ -4070,7 +4329,8 @@
 </div>
 <div>I.N
 <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/26/2684339d1caa49cf9d13e7b69eec5ba9.jpg?f=auto&q=75&w=640" alt="I.N Karma FANS SHOP" width=100%>
-</div> </div>
+</div>
+</div>
 <div class="poca">FANS SHOP</div>
 <!-- MAKESTAR -->
 <div class="member">
@@ -4100,14 +4360,16 @@
 </div>
 <div> OT8
   <img src="https://ndc.infludeo.com/media/photocard_blur/2025/08/28/1a2e60de62e64f1e9bc92d6244daef69.jpg?f=auto&q=75&w=640" alt="OT8 Karma MAKESTAR" width=100%>
-</div> </div>
-<div class="ot8poca">MAKESTAR</div>
-<!-- -->
-
+</div>
+</div>
+<div class="poca">MAKESTAR</div>
+</div> <!-- home page end -->
 </main>
 <!-- Database end -->
     <hr>
     <hr>
-    <p>Note: This website is fan-made, and is not affiliated with JYP Entertainment or Stray Kids. All rights to the images and content belong to their respective owners.</p>
+    <footer class="bg-top footer-nav">
+        <p>Note: This website is fan-made, and is not affiliated with JYP Entertainment or Stray Kids. All rights to the images and content belong to their respective owners.</p>
+    </footer>
 </body>
 </html>

@@ -1,10 +1,13 @@
 // BGM
 document.getElementById("music-art").onclick = function() {
 var audio = document.getElementById("BGM");
+const playPauseIcon = document.querySelector('.play-pause');
 if (audio.paused) {
     audio.play();
+    playPauseIcon.style.animationPlayState = 'running';
 } else {
     audio.pause();
+    playPauseIcon.style.animationPlayState = 'paused';
 }
 };
 
@@ -37,3 +40,44 @@ var x = setInterval(function() {
     document.getElementById("countdown").innerHTML = "RELEASED";
   }
 }, 1000);
+// Switch Pages
+function showAboutPage() {
+  document.querySelector(".home-page").classList.remove("show");
+  document.querySelector(".home-page").classList.add("hide");
+  document.querySelector(".contact-page").classList.remove("show");
+  document.querySelector(".contact-page").classList.add("hide");
+  document.querySelector(".about-page").classList.remove("hide");
+  document.querySelector(".about-page").classList.add("show");
+}
+function showHomePage() {
+  document.querySelector(".about-page").classList.remove("show");
+  document.querySelector(".about-page").classList.add("hide");
+  document.querySelector(".contact-page").classList.remove("show");
+  document.querySelector(".contact-page").classList.add("hide");
+  document.querySelector(".home-page").classList.remove("hide");
+  document.querySelector(".home-page").classList.add("show");
+}
+function showContactPage() {
+  document.querySelector(".home-page").classList.remove("show");
+  document.querySelector(".home-page").classList.add("hide");
+  document.querySelector(".about-page").classList.remove("show");
+  document.querySelector(".about-page").classList.add("hide");
+  document.querySelector(".contact-page").classList.remove("hide");
+  document.querySelector(".contact-page").classList.add("show");
+}
+// Scroll to Top Button
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+window.onscroll = function() {scrollFunction();};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollToTopBtn.style.display = "block";
+  } else {
+    scrollToTopBtn.style.display = "none";
+  }
+}
+
+scrollToTopBtn.onclick = function() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+};

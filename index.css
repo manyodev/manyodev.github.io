@@ -32,6 +32,7 @@ nav ul li a.active {
     }
     nav ul li a {
     display: block;
+    width: 100%;
     color: #000000;
     text-align: center;
     padding: 15px 16px;
@@ -39,22 +40,6 @@ nav ul li a.active {
     }
     nav ul li a:hover {
     background-color: #566a8c;
-    }
-/* Footer */
-footer {
-    background-color: #B0C4DE;
-    color: #000000;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    }
-footer p {
-    display: inline-block;
-    margin: 0;
-    font-size: 14px;
-    padding: 0 10px;
     }
 /* Scrolling Banner */
 .m marquee {
@@ -68,22 +53,23 @@ footer p {
 /* Music Art */
 #music-art, .album-cover {
 position: fixed;
-bottom: 0%;
-right: 0%;
+bottom: .5vw;
+left: .5vw;
 z-index: 1000;
-min-width: 5%;
-max-width: 7%;
+width: 6vw;
 height: auto;
-background-color: black;
 color: black;
+font-size: 1.5vw;
+cursor: pointer;
+border-radius: 1vw;
 }
-.cd {
-position: fixed;
-bottom: 0%;
-right: 1%;
-z-index: 999;
-min-width: 5%;
-max-width: 7%;
+.play-pause{
+position: relative;
+z-index: 1000;
+width: 2.5vw;
+height: auto;
+margin-left: 1.5vw;
+margin-bottom: 1vw;
 height: auto;
 -webkit-animation: spin 2s linear infinite;
 -webkit-animation:spin 4s linear infinite;
@@ -102,18 +88,12 @@ animation:spin 4s linear infinite;
 transform:rotate(360deg);
 }
 }
-.cd:hover { /* this makes the cd stop spinning when hovering! */
--webkit-animation-name-: pop 0.3s ease;
-}
 .album-text {
-    position: fixed;
+    position: relative;
+    z-index: 1000;
     color: rgb(0, 0, 0);
     text-shadow: #FFFFFF 1px 1px 2px;
-    font-size: 90%;
-    text-align: center;
-    z-index: 1000;
-    bottom: 0%;
-    right: 2%;
+
 }
 .album-text:hover {
     color: rgb(255, 255, 255);
@@ -134,11 +114,14 @@ thead {
     background-color: #B0C4DE;
 }
 /* Body */
-.bg {
+.bg-top {
+  background-color: #FFF0F5;
+}
+.background {
     /* font-family: "Indie Flower", normal; */
     background-color: #FFF0F5;
-    padding-top: 10px; /* Add padding to prevent content from going under the fixed nav bar */
-    margin: 0;
+    padding-top: 20px; /* Add padding to prevent content from going under the fixed nav bar */
+    margin: 0%;
 }
     /* Colors
     lavender: #E6E6FA
@@ -149,113 +132,74 @@ thead {
     lavender blush: #FFF0F5
     */
 /* Main */
-.main-content {
-    color: black;
-    background-color: #FFF0F5;
-    margin: 0;
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+.home-page {
+  display: block;
+}
+
+.about-page {
+  display: none;
+  font-size: 1.25vw;
+  padding: 1vw;
+}
+.about-page p, .about-page h1, .contact-page h1, .footer-nav {
+  text-align: center;
+}
+.contact-page {
+  display: none;
+  font-size: 1.25vw;
+  padding: 1vw;
 }
 /* Poca Database */
 .album {
     display: block;
     border: 0px solid #000;
-    background-color: #FFF0F5;
-    width: 95%;
+    width: auto;
     text-align: center;
-    margin-top: 50px;
+    margin-top: 2.5vw;
+    font-size: 1.75vw;
+
 }
 .member {
   text-align: center;
+  display: flex;
+  justify-content: center;
 }
     .member>div {
         display: inline-block;
         text-align: center;
-        width: fit-content;
-        max-width: 10%;
-        min-width: 10%;
-        margin: 0px;
-        padding: 0px;
-        font-size: 100%;
+        max-width: 10vw;
+        min-width: 10vw;
+        margin: .2vw;
+        padding: 0%;
+        font-size: 1.75vw;
         font-weight: bold;
         color: #000;
         background-color: #fff;
         border-radius: 0px;
         vertical-align: top;
         border: 1px solid #000;
-        border-bottom: 0px;
 }
 .poca {
     display: block;
     border: 1px solid #000;
-    border-top-width: 0px;
     background-color: #fff;
-    max-width: 82.5%;
+    min-width: fit-content;
+    max-width: 20vw;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
     font-style: normal;
     font-weight: bold;
-    font-size: 20px;
-}   
-.ot8poca {
-    display: block;
-    border: 1px solid #000;
-    border-top-width: 0px;
-    background-color: #fff;
-    max-width: 92.9%;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-}
-.rachapoca {
-    display: block;
-    border: 1px solid #000;
-    border-top-width: 0px;
-    background-color: #fff;
-    max-width: 30.7%;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-}
-.duopoca {
-    display: block;
-    border: 1px solid #000;
-    border-top-width: 0px;
-    background-color: #fff;
-    max-width: 20.5%;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-}
-.titlepoca {
-    display: block;
-    border: 1px solid #000;
-    background-color: #fff;
-    max-width: 82.5%;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
+    font-size: 1.75vw;
 }
 /* Font */
 .indie-flower-regular {
@@ -264,7 +208,7 @@ thead {
   font-style: normal;
 }
 /* Buttons */
-button {
+.button-form {
     background-color: #8aa2c0;
     color: #FFFFFF;
     border: none;
@@ -343,4 +287,23 @@ link:visited {
     font-size: 20px;
     font-weight: 400;
   }
+}
+/* Scroll to Top Button */
+#scrollToTopBtn {
+  display: none; /* Hidden by default */
+  position: fixed;
+  bottom: 1vw;
+  right: 1vw;
+  z-index: 99;
+  font-size: 1.5vw;
+  border: none;
+  outline: none;
+  background-color: #8aa2c0;
+  color: white;
+  cursor: pointer;
+  padding: 1vw;
+  border-radius: 1vw;
+}
+#scrollToTopBtn:hover {
+  background-color: #566a8c;
 }
